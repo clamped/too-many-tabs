@@ -14,18 +14,7 @@ function setBadgeWithTabCount() {
   });
 }
 
-chrome.tabs.onCreated.addListener(function () {
-  setBadgeWithTabCount();
-});
-
-chrome.tabs.onRemoved.addListener(function () {
-  setBadgeWithTabCount();
-});
-
-chrome.tabs.onAttached.addListener(function () {
-  setBadgeWithTabCount();
-});
-
-chrome.tabs.onDetached.addListener(function () {
-  setBadgeWithTabCount();
-});
+chrome.tabs.onCreated.addListener(setBadgeWithTabCount);
+chrome.tabs.onRemoved.addListener(setBadgeWithTabCount);
+chrome.tabs.onAttached.addListener(setBadgeWithTabCount);
+chrome.tabs.onDetached.addListener(setBadgeWithTabCount);
