@@ -1,0 +1,22 @@
+{
+  "name": "too-many-tabs",
+  "version": "1.0.0",
+  "description": "Chrome extension that helps out with tab wrangling for overeager ctrl+t users.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clamped/too-many-tabs.git"
+  },
+  "author": "Philip Clamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clamped/too-many-tabs/issues"
+  },
+  "homepage": "https://github.com/clamped/too-many-tabs#readme",
+  "dependencies": {
+    "mustache": "^2.3.0"
+  }
+}
